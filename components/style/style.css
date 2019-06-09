@@ -24,13 +24,23 @@
 	font-size: 1.5rem;
 }
 
+.main-container-text pre {
+	background-color: #0378a6;
+	color: #fff;
+	text-align: left;
+	font-family: courier;
+	font-size: 1em;
+	border-width: 0;
+	padding: 5px;
+	border: 1px dotted #ffaa00;
+}
 .sidebar {
 	display: block;
 	z-index: 3;
 	width: 230px;
 	overflow: hidden !important;
 	position: absolute !important;
-	height: 100%;
+	height: 200%;
 	background-color: #024873;
 	color: #f25c05;
 	font-family: "Segoe UI", Arial, sans-serif;
@@ -43,10 +53,14 @@
 .sidebar-tittle h4 {
 	font-size: 2rem;
 }
-
-a {
+.sidebar-menu {
+	display: flex;
+	flex-direction: column;
+}
+.sidebar-menu a {
 	text-decoration: none;
 	color: #f25c05;
+	margin: .5em auto;
 }
 
 .video-container {
