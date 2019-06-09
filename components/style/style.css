@@ -34,13 +34,20 @@
 	padding: 5px;
 	border: 1px dotted #ffaa00;
 }
+
+.ejemplo-button {
+	padding: 1em;
+	background-color: #f25c05;
+	color: #fff;
+	border-radius: 5px;
+}
 .sidebar {
 	display: block;
 	z-index: 3;
 	width: 230px;
 	overflow: hidden !important;
 	position: absolute !important;
-	height: 200%;
+	height: 300%;
 	background-color: #024873;
 	color: #f25c05;
 	font-family: "Segoe UI", Arial, sans-serif;
