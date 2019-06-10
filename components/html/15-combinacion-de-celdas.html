@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
+
+    <title>AprendeAlgo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+  <a href="../../index.html">AprendeAlgo</a>
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+<span></span>
+<span></span>
+<span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="./1-intro.html" >HTML</a>
+                   
+                   
+                </div>
+              </div>
+        </nav>
+    </header>
+    <section class="main-html">
+        <nav class="sidebar">
+            <div class="sidebar-tittle">
+                <h4>HTML</h4>
+            </div>
+            <div class="sidebar-menu">
+<a href="./1-intro.html">Introducción a HTML</a>
+<a href="./2-que.html">¿Que es HTML?</a>
+<a href="./3-estructura.html">Estructura de HTML</a>
+<a href="./4-titulos.html">Titulos</a>
+<a href="./5-parrafos.html">Parrafos</a>
+<a href="./6-enfasis.html">Enfasis </a>
+<a href="./7-hypervinculo.html">Hipervínculo</a>
+<a href="./8-imagenes.html">Imagenes</a>
+<a href="./9-listas-ordenadas.html">Listas ordenadas</a>
+<a href="./10-listas-no-ordenadas.html">Listas no ordenadas</a>
+<a href="./11-listas-de-definiciones.html">Lista de definiciones</a>
+<a href="./12-tablas.html">Tablas</a>
+<a href="./13-tabla-encabezado.html">Tabla con encabezado</a>
+<a href="./14-tabala-con-titulo.html">Tabla con titulo</a>
+<a href="./15-combinacion-de-celdas.html">Tabla y combinación de celdas.</a>
+<a href="./16-formulario.html">Formulario</a>
+<a href="./17-input-type.html">Input type</a>
+<a href="./18-textarea.html">Textarea</a>
+<a href="./19-checkbox.html">Checkbox</a>
+<a href="./20-radio.html">Radio</a>
+<a href="./21-select.html">Select</a>
+<a href="./22-button.html">Button</a>
+<a href="./23-file.html">File</a>
+<a href="./24-hidden.html">Hidden</a>
+            </div>
+        </nav>
+        <div class="main-container">
+            <h1>Tabla y combinación de celdas.</h1>
+            <div class="main-container-text">
+                <p>
+En algunas situaciones se necesita que una celda ocupe el lugar de dos o más celdas en forma horizonzal o vertical, para estos casos el elemento td o th dispone de dos propiedades llamadas rowspan y colspan.
+<br><br>
+A estas propiedades se les asigna un valor entero a partir de 2.
+<br><br>
+Si queremos que una celda ocupe tres columnas luego inicializamos la propiedad colspan con el valor 3:
+<br><br>
+&lt;td colspan="3"&gt;Facturación de los últimos tres meses&lt;/td&gt;
+<br><br>
+Si por el contrario queremos que una celda se extienda a nivel de filas luego hacemos:
+<br><br>
+&lt;td rowspan="3"&gt;Secciones&lt;/td&gt;
+<br><br>
+Veamos un ejemplo empleando el concepto de combinación de celdas:
+         
+                </p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Título de la página&lt;/title&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border="1"&gt;
+&lt;tr&gt;
+    &lt;td rowspan="4"&gt;Recursos&lt;/td&gt;&lt;td colspan="4"&gt;Facturación de los últimos tres meses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Discos Duros&lt;/td&gt;&lt;td&gt;23000&lt;/td&gt;&lt;td&gt;27200&lt;/td&gt;&lt;td&gt;26000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;CPU&lt;/td&gt;&lt;td&gt;73000&lt;/td&gt;&lt;td&gt;67300&lt;/td&gt;&lt;td&gt;51000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Monitores&lt;/td&gt;&lt;td&gt;53000&lt;/td&gt;&lt;td&gt;72000&lt;/td&gt;&lt;td&gt;88000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;                   
+                </pre>
+                <a class="ejemplo-button" href="./ejemplos/e-combinacion.html" target="_blank">Mira el resultado</a> 
+                <p>
+Veamos como definimos la primer fila de la tabla:
+<br><br>
+&lt;tr&gt;
+<br>
+    &lt;td rowspan="4"&gt;Recursos&lt;/td&gt;&lt;td colspan="4"&gt;Facturación de los últimos tres meses&lt;/td&gt;
+<br>
+&lt;/tr&gt;
+<br><br>
+Como podemos observar la primer celda la expandimos hacia abajo 4 casilla y la segunda celda la expandimos hacia la derecha en 4 celdas.
+<br><br>
+Cuando tenemos que disponer las celdas de la segunda fila debemos tener en cuenta que la primera está ocupada. Luego el código es:
+<br><br>
+&lt;tr&gt;
+<br>
+    &lt;td&gt;Discos Duros&lt;/td&gt;&lt;td&gt;23000&lt;/td&gt;&lt;td&gt;27200&lt;/td&gt;&lt;td&gt;26000&lt;/td&gt;
+<br>
+&lt;/tr&gt;
+                </p>
+            </div>             
+        </div>       
+    </section>
+    <footer></footer>
+</body>
+</html>

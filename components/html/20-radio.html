@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
 
-
     <title>AprendeAlgo</title>
 </head>
 <body>
@@ -71,73 +70,58 @@
             </div>
         </nav>
         <div class="main-container">
-            <h1>¿Que es HTML?</h1>
+            <h1>Radio</h1>
             <div class="main-container-text">
                 <p>
-                        Todos los elementos de HTML están encerrados entre los caracteres "&lt;" y "&gt;"
-                        <br><br>
-                        La estructura básica de una página HTML es:
+                    Cuando tenemos un conjunto de opciones pero solo una puede ser seleccionada debemos emplear controles visuales de tipo radio.
+                    <br><br>
+                    Para definir controles de tipo radio también utilizamos el elemento input inicializando la propiedad type con el valor "radio"
+                    <br><br>
+                    Veamos un ejemplo del empleo de este control gráfico, supongamos que necesitamos indicar el tipo de estudios que tenemos utilizando controles de tipo radio:           
                 </p>
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Título de la página&lt;/title&gt;
-&lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Prueba de formulario&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-Cuerpo de la página.
+&lt;form action="registrardatos.php" method="post"&gt;
+    Ingrese su nombre:
+    &lt;input type="text" name="nombre" size="30"&gt;&lt;br&gt;
+    Seleccione el máximo nivel de estudios que tiene:
+    &lt;br&gt;
+    &lt;input type="radio" name="estudios" value="1"&gt;Sin 
+    estudios&lt;br&gt;
+    &lt;input type="radio" name="estudios" value="2"&gt;Primario&lt;br&gt;
+    &lt;input type="radio" name="estudios" value="3"&gt;Secundario&lt;br&gt;
+    &lt;input type="radio" name="estudios" value="4"&gt;Universitario&lt;br&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
 &lt;/body&gt;
-&lt;/html&gt;                        
+&lt;/html&gt;                  
 </pre>
-                <a class="ejemplo-button" href="./ejemplos/e-estructura.html" target="_blank">Mira el resultado</a>
+                <a class="ejemplo-button" href="./ejemplos/e-radio.html" target="_blank">Mira el resultado</a> 
                 <p>
-                    Una página HTML es un archivo que generalmente tiene como extensión los caracteres html. Por ejemplo podemos llamar a nuestra primer página con el nombre: pagina1.html
+                    Veamos como se definen los controles de tipo radio:
                     <br><br>
-                    Estos son los elementos básicos que toda página HTML debe llevar:
+                    &lt;input type="radio" name="estudios" value="1"&gt;Sin estudios&lt;br&gt;
+                    <br>
+                    &lt;input type="radio" name="estudios" value="2"&gt;Primario&lt;br&gt;
+                    <br>
+                    &lt;input type="radio" name="estudios" value="3"&gt;Secundario&lt;br&gt;
+                    <br>
+                    &lt;input type="radio" name="estudios" value="4"&gt;Universitario&lt;br&gt;
                     <br><br>
-                    Lo primero es el DOCTYPE que informa al navegador que el contenido siguiente se trata de un archivo HTML (todos los navegadores modernos analizan la presencia del DOCTYPE)
+                    Como podemos observar todos tienen el mismo valor en la propiedad name, con esto se logra que cuando seleccionamos uno se deseleccione el actual.
+                    <br><br>                  
+                    El valor que se rescata en el servidor es el dato almacenado en la propiedad value.
                     <br><br>
-                    Luego continúa con la marca: 
-                    <br>
-                    &lt;html&gt;
-                    <br>
-                    y finaliza con la marca:
-                    <br>
-                    &lt;/html&gt;
-                    <br>
-                    al final del archivo.
-                    Los fines de marcas tienen el mismo nombre que el comienzo de marca, más el caracter /
-                    <br>
-                    <br>
-                    Una página HTML tiene dos secciones muy bien definidas que son la cabecera:
-                    <br>
-                    <br>
-                    &lt;head&gt;
-                    <br>
-                    &lt;/head&gt;
-                    <br>
-                    <br>
-                    Y el cuerpo de la página:
-                    <br>
-                    <br>
-                    &lt;body&gt;
-                    <br>
-                    Cuerpo de la página.
-                    <br>
-                    &lt;/body&gt;
-                    <br><br>
-                    En la cabecera es común inicializar el título de la página dentro de las marcas &lt;title&gt;&lt;/title&gt; (normalmente aparece en la barra superior de nuestro navegador y es utilizado por los motores de búsqueda como Google para indexar la página) El título debe hacer referencia al contenido en sí de la página.
-                    <br><br>
-                    Dentro de la cabecera disponemos la etiqueta meta donde definimos la propiedad charset con el valor UTF-8 que es un formato de caracteres ampliamente empleado en internet (si no disponemos este formato no podemos disponer caracteres acentuados por ejemplo, más adelante veremos en profundidad la etiqueta meta):
-                    <br><br>
-                    &lt;meta charset="UTF-8"&gt;
+                    Si queremos disponer varios grupos de controles de tipo radio debemos definirles a cada grupo la propiedad name nombres distintos.
                 </p>
-            </div>
-            
-        </div>
-        
-        
+            </div>             
+        </div>       
     </section>
     <footer></footer>
 </body>

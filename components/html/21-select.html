@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
+
+    <title>AprendeAlgo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+  <a href="../../index.html">AprendeAlgo</a>
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+<span></span>
+<span></span>
+<span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="./1-intro.html" >HTML</a>
+                   
+                   
+                </div>
+              </div>
+        </nav>
+    </header>
+    <section class="main-html">
+        <nav class="sidebar">
+            <div class="sidebar-tittle">
+                <h4>HTML</h4>
+            </div>
+            <div class="sidebar-menu">
+<a href="./1-intro.html">Introducción a HTML</a>
+<a href="./2-que.html">¿Que es HTML?</a>
+<a href="./3-estructura.html">Estructura de HTML</a>
+<a href="./4-titulos.html">Titulos</a>
+<a href="./5-parrafos.html">Parrafos</a>
+<a href="./6-enfasis.html">Enfasis </a>
+<a href="./7-hypervinculo.html">Hipervínculo</a>
+<a href="./8-imagenes.html">Imagenes</a>
+<a href="./9-listas-ordenadas.html">Listas ordenadas</a>
+<a href="./10-listas-no-ordenadas.html">Listas no ordenadas</a>
+<a href="./11-listas-de-definiciones.html">Lista de definiciones</a>
+<a href="./12-tablas.html">Tablas</a>
+<a href="./13-tabla-encabezado.html">Tabla con encabezado</a>
+<a href="./14-tabala-con-titulo.html">Tabla con titulo</a>
+<a href="./15-combinacion-de-celdas.html">Tabla y combinación de celdas.</a>
+<a href="./16-formulario.html">Formulario</a>
+<a href="./17-input-type.html">Input type</a>
+<a href="./18-textarea.html">Textarea</a>
+<a href="./19-checkbox.html">Checkbox</a>
+<a href="./20-radio.html">Radio</a>
+<a href="./21-select.html">Select</a>
+<a href="./22-button.html">Button</a>
+<a href="./23-file.html">File</a>
+<a href="./24-hidden.html">Hidden</a>
+            </div>
+        </nav>
+        <div class="main-container">
+            <h1>Select</h1>
+            <div class="main-container-text">
+                <p>
+El elemento select es un cuadro de selección.
+<br><br>
+Este elemento HTML nos permite seleccionar una opción entre un conjunto. Veremos en el concepto próximo que según como la configuramos podemos seleccionar varias opciones.
+<br><br>
+Veamos con un ejemplo como crear un control de tipo select. Confeccionemos un formulario que solicite cargar el nombre de una persona y el pais donde vive, este último elemento mediante un control de tipo select permitir seleccionar el pais.        
+                </p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Prueba de formulario&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form action="registrardatos.php" method="post"&gt;
+    Ingrese su nombre:
+    &lt;input type="text" name="nombre" size="30"&gt;&lt;br&gt;
+    Seleccione su pais:
+    &lt;select name="pais"&gt;
+    &lt;option value="1"&gt;Argentina&lt;/option&gt;
+    &lt;option value="2"&gt;España&lt;/option&gt;
+    &lt;option value="3"&gt;México&lt;/option&gt;
+    &lt;option value="4"&gt;Guatemala&lt;/option&gt;
+    &lt;option value="5"&gt;Honduras&lt;/option&gt;
+    &lt;option value="7"&gt;El Salvador&lt;/option&gt;
+    &lt;option value="8"&gt;Venezuela&lt;/option&gt;
+    &lt;option value="9"&gt;Colombia&lt;/option&gt;
+    &lt;option value="10"&gt;Cuba&lt;/option&gt;
+    &lt;option value="11"&gt;Bolivia&lt;/option&gt;
+    &lt;option value="13"&gt;Perú&lt;/option&gt;
+    &lt;option value="14"&gt;Ecuador&lt;/option&gt;
+    &lt;option value="15"&gt;Paraguay&lt;/option&gt;
+    &lt;option value="16"&gt;Uruguay&lt;/option&gt;
+    &lt;option value="17"&gt;Chile&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;                  
+                </pre>
+                <a class="ejemplo-button" href="./ejemplos/e-select.html" target="_blank">Mira el resultado</a> 
+                <p>
+Veamos la sintaxis para crear un cuadro de selección, primero abrimos la marca select la cual tiene definido la propiedad name:
+<br><br>
+&lt;select name="pais"&gt;
+Luego sin cerrar el select definimos tantos elementos de tipo option como opciones tendrá el cuadro de selección:
+<br><br>
+&lt;option value="1"&gt;Argentina&lt;/option&gt;
+<br>
+&lt;option value="2"&gt;España&lt;/option&gt;
+<br>
+&lt;option value="3"&gt;México&lt;/option&gt;
+<br><br>
+El elemento option define el texto a mostrar y en la propiedad value indica el valor a enviar al servidor en caso de estar seleccionada dicha opción.
+<br><br>
+Luego de definir todas las opciones de nuestro cuadro de selección cerramos la marca select:
+<br><br>
+&lt;/select&gt;
+<br><br>
+Una variante gráfica de este control es inicializar la propiedad size del elemento select con un valor distinto a uno, con esto creamos un cuadro de selección que muestra simultáneamente varios elementos (de todos modos solo uno se puede elegir)
+<br><br>
+Es decir que con la propiedad size solo logramos un cambio estético del control.
+<br><br>
+Por ejemplo si definimos el valor 5:
+<br><br>
+&lt;select name="pais" size="5"&gt;
+                </p>
+            </div>             
+        </div>       
+    </section>
+    <footer></footer>
+</body>
+</html>

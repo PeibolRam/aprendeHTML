@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
 
-
     <title>AprendeAlgo</title>
 </head>
 <body>
@@ -71,73 +70,47 @@
             </div>
         </nav>
         <div class="main-container">
-            <h1>¿Que es HTML?</h1>
+            <h1>Tablas con encabezado</h1>
             <div class="main-container-text">
                 <p>
-                        Todos los elementos de HTML están encerrados entre los caracteres "&lt;" y "&gt;"
-                        <br><br>
-                        La estructura básica de una página HTML es:
+                    La primer característica que le vamos a agregar a una tabla son las celdas de encabezado. Normalmente la primer fila de una tabla puede representar los títulos para cada columna.
+                    <br><br>
+                    Para indicar que se trata de una celda de encabezado utilizamos el elemento &lt;th&gt; en lugar de &lt;td&gt;
+                    <br><br>
+                    El navegador representa distinto las celdas de datos y las celdas de encabezamiento.
+                    <br><br>
+                    Confeccionemos el mismo problema del concepto anterior pero agregando un título a cada columna de la tabla mediante celdas de encabezamiento:
+                    <br><br>         
                 </p>
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Título de la página&lt;/title&gt;
-&lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-Cuerpo de la página.
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+    &lt;th&gt;Paises&lt;/th&gt;&lt;th&gt;Cantidad de habitantes&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;China&lt;/td&gt;&lt;td&gt;1300 millones&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;India&lt;/td&gt;&lt;td&gt;1080 millones&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Estados Unidos&lt;/td&gt;&lt;td&gt;295 millones&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
 &lt;/body&gt;
-&lt;/html&gt;                        
+&lt;/html&gt;                   
 </pre>
-                <a class="ejemplo-button" href="./ejemplos/e-estructura.html" target="_blank">Mira el resultado</a>
-                <p>
-                    Una página HTML es un archivo que generalmente tiene como extensión los caracteres html. Por ejemplo podemos llamar a nuestra primer página con el nombre: pagina1.html
-                    <br><br>
-                    Estos son los elementos básicos que toda página HTML debe llevar:
-                    <br><br>
-                    Lo primero es el DOCTYPE que informa al navegador que el contenido siguiente se trata de un archivo HTML (todos los navegadores modernos analizan la presencia del DOCTYPE)
-                    <br><br>
-                    Luego continúa con la marca: 
-                    <br>
-                    &lt;html&gt;
-                    <br>
-                    y finaliza con la marca:
-                    <br>
-                    &lt;/html&gt;
-                    <br>
-                    al final del archivo.
-                    Los fines de marcas tienen el mismo nombre que el comienzo de marca, más el caracter /
-                    <br>
-                    <br>
-                    Una página HTML tiene dos secciones muy bien definidas que son la cabecera:
-                    <br>
-                    <br>
-                    &lt;head&gt;
-                    <br>
-                    &lt;/head&gt;
-                    <br>
-                    <br>
-                    Y el cuerpo de la página:
-                    <br>
-                    <br>
-                    &lt;body&gt;
-                    <br>
-                    Cuerpo de la página.
-                    <br>
-                    &lt;/body&gt;
-                    <br><br>
-                    En la cabecera es común inicializar el título de la página dentro de las marcas &lt;title&gt;&lt;/title&gt; (normalmente aparece en la barra superior de nuestro navegador y es utilizado por los motores de búsqueda como Google para indexar la página) El título debe hacer referencia al contenido en sí de la página.
-                    <br><br>
-                    Dentro de la cabecera disponemos la etiqueta meta donde definimos la propiedad charset con el valor UTF-8 que es un formato de caracteres ampliamente empleado en internet (si no disponemos este formato no podemos disponer caracteres acentuados por ejemplo, más adelante veremos en profundidad la etiqueta meta):
-                    <br><br>
-                    &lt;meta charset="UTF-8"&gt;
-                </p>
-            </div>
-            
-        </div>
-        
-        
+                <a class="ejemplo-button" href="./ejemplos/e-tablas-con-encabezado.html" target="_blank">Mira el resultado</a> 
+                
+            </div>             
+        </div>       
     </section>
     <footer></footer>
 </body>
