@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="JavaScript" href="./js/examen.js">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
+
+    <title>AprendeAlgo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+  <a href="../../index.html">AprendeAlgo</a>
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+<span></span>
+<span></span>
+<span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="./1-intro.html" >HTML</a>
+                   
+                   
+                </div>
+              </div>
+        </nav>
+    </header>
+    <section class="main-html">
+        <nav class="sidebar">
+            <div class="sidebar-tittle">
+                <h4>HTML</h4>
+            </div>
+            <div class="sidebar-menu">
+                <a href="./1-intro.html">Introducción a HTML</a>
+                <a href="./2-que.html">¿Que es HTML?</a>
+                <a href="./3-estructura.html">Estructura de HTML</a>
+                <a href="./4-titulos.html">Titulos</a>
+                <a href="./5-parrafos.html">Parrafos</a>
+                <a href="./6-enfasis.html">Enfasis </a>
+                <a href="./7-hypervinculo.html">Hipervínculo</a>
+                <a href="./8-imagenes.html">Imagenes</a>
+                <a href="./9-listas-ordenadas.html">Listas ordenadas</a>
+                <a href="./10-listas-no-ordenadas.html">Listas no ordenadas</a>
+                <a href="./11-listas-de-definiciones.html">Lista de definiciones</a>
+                <a href="./12-tablas.html">Tablas</a>
+                <a href="./13-tabla-encabezado.html">Tabla con encabezado</a>
+                <a href="./14-tabala-con-titulo.html">Tabla con titulo</a>
+                <a href="./15-combinacion-de-celdas.html">Tabla y combinación de celdas.</a>
+                <a href="./16-formulario.html">Formulario</a>
+                <a href="./17-input-type.html">Input type</a>
+                <a href="./18-textarea.html">Textarea</a>
+                <a href="./19-checkbox.html">Checkbox</a>
+                <a href="./20-radio.html">Radio</a>
+                <a href="./21-select.html">Select</a>
+                <a href="./22-button.html">Button</a>
+                <a href="./23-file.html">File</a>
+                <a href="./24-hidden.html">Hidden</a>
+                <a href="./25-examen.html">Examen</a>
+            </div>
+        </nav>
+        <div class="main-container">
+            <h1>Hidden</h1>
+            <div class="main-container-text">
+                <form action="">
+                    1.   ¿Que es HTML?<br>
+                        
+                            <input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')">
+                            A.Compilador de Programas<br>
+                            <input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')">
+                            B.Lector de Hojas con extension .HTML<br>
+                    
+                            <input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')">
+                            C.Lenguaje de programacion que permite utilizar etiquetas para crear documentos electronicos<br>
+                            <input type="radio" name="pregunta1" value="D" onclick="respuesta1('D')">
+                            D.Explorador<br>  <br>     
+                        
+                    2.  ¿Que extension tienen los documentos electronicos?<br>
+                    
+                            <input type="radio" name="pregunta2" value="A" onclick="respuesta2('A')">
+                            A.C<br>
+                    
+                            <input type="radio" name="pregunta2" value="B" onclick="respuesta2('B')">
+                            B.HTTP.<br>
+                            <input type="radio" name="pregunta2" value="C" onclick="respuesta2('C')">
+                            C.HTML<br>
+                    
+                            <input type="radio" name="pregunta2" value="D" onclick="respuesta2('D')">
+                            D.LINK<br>  <br>         
+                        
+                        
+                        
+                    
+                    3.   ¿Que etiqueta se utiliza para declarar un documento HTML?<br>            
+                        
+                            
+                            <input type="radio" name="pregunta3" value="A" onclick="respuesta3('A')">
+                            A.BODY&gt;<br>
+                            <input type="radio" name="pregunta3" value="B" onclick="respuesta3('B')">
+                            B.TITLE&gt;<br>
+                            <input type="radio" name="pregunta3" value="C" onclick="respuesta3('C')">
+                    
+                            C.HTML&gt;<br>
+                            <input type="radio" name="pregunta3" value="D" onclick="respuesta3('D')">
+                            D.FONT&gt;<br> <br>                
+                        
+                        
+                    
+                    4.  ¿Con que etiqueta podemos insertar una imagen?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta4" value="A" onclick="respuesta4('A')">
+                            A.FONT&gt;<br>
+                            <input type="radio" name="pregunta4" value="B" onclick="respuesta4('B')">
+                            B.BACKGROUND&gt;.<br> 
+                            <input type="radio" name="pregunta4" value="A" onclick="respuesta4('A')">
+                            C.IMS SRC&gt;<br><br>                               
+                        
+                        
+                    
+                    5.  ¿Que utilizamos para declarar un parrafo?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta5" value="A" onclick="respuesta5('A')">
+                            A.P&gt;<br>
+                            <input type="radio" name="pregunta5" value="B" onclick="respuesta5('B')">
+                            B.SOUND&gt;<br>
+                            <input type="radio" name="pregunta5" value="C" onclick="respuesta5('C')">
+                            C.FONT&gt;<br>
+                            <input type="radio" name="pregunta5" value="D" onclick="respuesta5('D')">
+                            D.Nada, solo se escribe<br> <br>                                  
+                        
+                        
+                    
+                    6. ¿Con que simbolo cerramos casi todas las etiquetas?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta6" value="A" onclick="respuesta6('A')">
+                            A.A&gt;<br>
+                            <input type="radio" name="pregunta6" value="B" onclick="respuesta6('B')">
+                            B.&lt;()&gt;<br>
+                            <input type="radio" name="pregunta6" value="C" onclick="respuesta6('C')">
+                            C.&lt;=&gt;<br>
+                            <input type="radio" name="pregunta6" value="D" onclick="respuesta6('D')">
+                            D./&gt;<br>   <br>                               
+                        
+                        
+                    
+                    7.  ¿Cúal es la etiqueta que se utiliza para iniciar el cuerpo del programa?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta7" value="A" onclick="respuesta7('A')">
+                            A.CUERPO&gt;<br>
+                            <input type="radio" name="pregunta7" value="B" onclick="respuesta7('B')">
+                        B.BODY&gt;<br>
+                            <input type="radio" name="pregunta7" value="C" onclick="respuesta7('C')">
+                            C.TITLE&gt;<br>
+                            <input type="radio" name="pregunta7" value="D" onclick="respuesta7('D')">
+                            D.HEAD&gt;<br>   <br>                              
+                        
+                        
+                    
+                    8.  ¿Qué etiqueta se utiliza para insertar una línea?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta8" value="A" onclick="respuesta8('A')">
+                            A.B&gt;<br>
+                            <input type="radio" name="pregunta8" value="B" onclick="respuesta8('B')">
+                            B.M&gt;<br>
+                            <input type="radio" name="pregunta8" value="C" onclick="respuesta8('C')">
+                            C.L&gt;<br>
+                            <input type="radio" name="pregunta8" value="D" onclick="respuesta8('D')">
+                            D.HR&gt;<br> <br>                                  
+                        
+                        
+                    
+                    9.   ¿Qué otro lenguaje es similar a HTML y se puede relacionar entre si?<br>
+                    
+                            <input type="radio" name="pregunta9" value="A" onclick="respuesta9('A')">
+                            A.C++<br>
+                    
+                            <input type="radio" name="pregunta9" value="B" onclick="respuesta9('B')">
+                            B.INTERNET EXPLORER<br>                               
+                            
+                            <input type="radio" name="pregunta9" value="A" onclick="respuesta9('A')">
+                            C.Java<br>
+                    
+                            <input type="radio" name="pregunta9" value="B" onclick="respuesta9('B')">
+                            D.JavaScript<br> <br>                              
+                        
+                        
+                    
+                    10.  CUAL DE ESTAS ETIQUETAS NO EXISTE EN HTML <br>            
+                        
+                        
+                            <input type="radio" name="pregunta10" value="A" onclick="respuesta10('A')">
+                            A.BODI&gt;<br>
+                            <input type="radio" name="pregunta10" value="B" onclick="respuesta10('B')">
+                            B.FONT&gt;<br>
+                            <input type="radio" name="pregunta10" value="C" onclick="respuesta10('C')">
+                            C.HR&gt;<br>
+                            <input type="radio" name="pregunta10" value="D" onclick="respuesta10('D')">
+                            D.TABLE&gt;<br>  <br>                                
+                        
+                        
+                    
+                    11. 
+                        ¿Cual etiqueta utilizamos para declarar un salto de linea?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta11" value="A" onclick="respuesta11('A')">
+                            A.FRAMES&gt;<br>
+                            <input type="radio" name="pregunta11" value="B" onclick="respuesta11('B')">
+                            B.BR&gt;<br>
+                            <input type="radio" name="pregunta11" value="C" onclick="respuesta11('C')">
+                            C.A&gt;<br>
+                            <input type="radio" name="pregunta11" value="D" onclick="respuesta11('D')">
+                            D.C&gt;<br>  <br>                               
+                        
+                        
+                    
+                    12. ¿Que etiqueta se usa para encabezamientos?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta12" value="A" onclick="respuesta12('A')">
+                            A.H...&gt;<br>
+                            <input type="radio" name="pregunta12" value="B" onclick="respuesta12('B')">
+                            B.FONT&gt;<br>
+                            <input type="radio" name="pregunta12" value="C" onclick="respuesta12('C')">
+                            C.SIZE&gt;<br>
+                            <input type="radio" name="pregunta12" value="D" onclick="respuesta12('D')">
+                            D.HG&gt;<br>  <br>                                
+                        
+                        
+                    
+                    
+                    
+                    13. 
+                        ¿Que etiqueta utilizamos para insertar un video? <br>            
+                        
+                    
+                            <input type="radio" name="pregunta13" value="A" onclick="respuesta13('A')">
+                            A.IMG&gt;<br>
+                            <input type="radio" name="pregunta13" value="B" onclick="respuesta13('B')">
+                            B.MOVIE&gt;<br>
+                            <input type="radio" name="pregunta13" value="C" onclick="respuesta13('C')">
+                            C.HREF&gt;<br>
+                            <input type="radio" name="pregunta13" value="D" onclick="respuesta13('D')">
+                            D.EMBED=SRC&gt;<br> <br>                                  
+                        
+                        
+                    
+                    14. 
+                        ¿Cual etiqueta puede centrar practicamente todo? <br>
+                    
+                            <input type="radio" name="pregunta14" value="A" onclick="respuesta14('A')">
+                            A.C&gt;<br>
+                            <input type="radio" name="pregunta14" value="B" onclick="respuesta14('B')">
+                            B./CENTER&gt;<br>
+                            <input type="radio" name="pregunta14" value="C" onclick="respuesta14('C')">
+                            C.CENTER&gt;<br>
+                            <input type="radio" name="pregunta14" value="D" onclick="respuesta14('D')">
+                            D.RIGHT&gt;<br> <br>                                
+                        
+                        
+                    
+                    
+                    15. 
+                        ¿Qué es un caracter especial?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta15" value="A" onclick="respuesta15('A')">
+                            A.@<br>
+                            <input type="radio" name="pregunta15" value="B" onclick="respuesta15('B')">
+                            B.´<br>
+                            <input type="radio" name="pregunta15" value="C" onclick="respuesta15('C')">
+                            C.Ninguno<br>
+                            <input type="radio" name="pregunta15" value="D" onclick="respuesta15('D')">
+                            D.Ñ         <br>     <br>                 
+                        
+                        
+                    
+                    16. 
+                        ¿Qué etiqueta utilizamos para declarar  listas de definicion?<br>            
+                        
+                    
+                            <input type="radio" name="pregunta16" value="A" onclick="respuesta16('A')">
+                            A.DT&gt;<br>
+                            <input type="radio" name="pregunta16" value="B" onclick="respuesta16('B')">
+                            B.OL TYPE&gt;<br>
+                    
+                            <input type="radio" name="pregunta16" value="C" onclick="respuesta16('C')">
+                            C.DD&gt;<br>
+                            <input type="radio" name="pregunta16" value="D" onclick="respuesta16('D')">
+                            D./DL&gt;<br>   <br>                               
+                        
+                        
+                    
+                    17. 
+                        CUAL DE ESTOS ENUNCIADOS NO PUEDE "LEER" ARCHIVOS CON EXTENSION HTML
+                        
+                        <br> 
+                    
+                            <input type="radio" name="pregunta17" value="A" onclick="respuesta17('A')">
+                            A.Gogle Chroome<br>
+                            <input type="radio" name="pregunta17" value="B" onclick="respuesta17('B')">
+                            B.INTERNET EXPLORER<br>
+                            <input type="radio" name="pregunta17" value="C" onclick="respuesta17('C')">
+                            C.Block de Notas<br>
+                            <input type="radio" name="pregunta17" value="D" onclick="respuesta17('D')">
+                            D.Opera<br>  <br>                                
+                        
+                        
+                    
+                    18. 
+                        ¿Qué etiqueta se utiliza para alinear un parrafo a la izquierda?             
+                        
+                        <br>
+                    
+                            <input type="radio" name="pregunta18" value="A" onclick="respuesta18('A')">
+                    
+                            A.P ALIGN="left"&gt;<br>
+                            <input type="radio" name="pregunta18" value="B" onclick="respuesta18('B')">
+                            B.LEFT&gt;<br>
+                            <input type="radio" name="pregunta18" value="C" onclick="respuesta18('C')">
+                            C.T&gt;<br>
+                            <input type="radio" name="pregunta18" value="D" onclick="respuesta18('D')">
+                            D."L"&gt;<br>      <br>                           
+                                           
+                    
+                    19. 
+                        ¿Cual es el editor mas comun de documentos HTML? <br>            
+                        
+                        
+                            
+                            <input type="radio" name="pregunta19" value="A" onclick="respuesta19('A')">
+                            A.BLOCK DE NOTAS<br>
+                            <input type="radio" name="pregunta19" value="B" onclick="respuesta19('B')">
+                            B.WORD<br>
+                            <input type="radio" name="pregunta19" value="C" onclick="respuesta19('C')">
+                            C.INTERNET EXPLORER<br>
+                            <input type="radio" name="pregunta19" value="D" onclick="respuesta19('D')">
+                            D.GOGLE CHROOME<br>  <br>                                 
+                    
+                    20. 
+                        ¿Cual atributo define el tamaño de letra?<br>            
+                        
+                            
+                            <input type="radio" name="pregunta20" value="A" onclick="respuesta20('A')">
+                            A.TAMAÑO&gt;<br>
+                            <input type="radio" name="pregunta20" value="B" onclick="respuesta20('B')">
+                            B.ALINEAR&gt;<br>
+                            <input type="radio" name="pregunta20" value="C" onclick="respuesta20('C')">
+                            C.SIZE&gt;<br>
+                            <input type="radio" name="pregunta20" value="D" onclick="respuesta20('D')">
+                            D.TAMAÑO=""&gt;<br>  <br>   
+
+                            <input type="button" name="submit" value="Tu resultado del test es:" onclick="examinar()">
+                            &nbsp; 
+                            <input type="button" name="Reset" value="Reinicar test" onclick="avisoreset()">
+                            &nbsp; 
+                            <input type="button" name="solucion" value="Respuestas correctas" onclick="alert('RESPUESTAS CORRECTAS\n\n1:B    6:A   11:D   16:D   \n2:C    7:B   12:A   17:D   \n3:D    8:C   13:A   18:A   \n4:B    9:B    14:B   19:A   \n5:C   10:B   15:C   20:D')">
+
+                            <p id="resultado"></p>
+                    </form>              
+                    
+                    
+                    
+
+
+                   
+    
+            </div>             
+        </div>       
+    </section>
+    <footer></footer>
+</body>
+</html>
